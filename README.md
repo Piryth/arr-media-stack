@@ -406,7 +406,7 @@ More than just a deployment script, this project is an **exercise in building re
 
 ## 🏗️ Architecture & Hardware
 
-*(Insert Architecture Diagram Here)*
+![Architecture diagram](assets/architecture.drawio.svg)
 
 **Hardware Setup:**
 * **Hypervisor:** Recycled Laptop (Intel i7, 8GB RAM) running Proxmox VE.
@@ -442,6 +442,7 @@ homelab/
 └── lxc01/              # Static configs managed outside Ansible
     ├── compose/        # Reference Docker Compose files
     └── dns/            # Unbound recursive resolver config
+```
 
 ## ⚙️ Tech Stack
 
