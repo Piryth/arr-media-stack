@@ -188,6 +188,10 @@ services:
   navidrome:
     image: deluan/navidrome:latest
     user: 1000:1000
+    environment:
+      # The file watcher misses files written straight to /data/local (below mergerfs),
+      # and Navidrome has no periodic scan by default: quick scan every hour as a safety net.
+      ND_SCANNER_SCHEDULE: "@every 1h"
     ports:
       - "4533:4533"
     restart: unless-stopped

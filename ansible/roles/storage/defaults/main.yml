@@ -152,6 +152,7 @@ storage_offload_interval: 30min
 storage_offload_categories:
   movies: 1
   tv: 2
+  music: 2
 
 # Free space on /data/local: below low = pressure mode, which offloads until high.
 # Keep low above the diskguard pause threshold, and size both against the

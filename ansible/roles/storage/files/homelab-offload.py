@@ -547,6 +547,9 @@ def auto(cfg):
     log.info("free %s (low %s, high %s) | mode %s | %d groups, %d blocked, %d chosen%s",
              fmt(free), fmt(cfg["low"]), fmt(cfg["high"]), mode, len(groups), blocked,
              len(chosen), " | DRY RUN" if cfg["dry_run"] else "")
+    for g in groups:
+        if g["blocked"]:
+            log.debug("blocked %s: %s", ", ".join(sorted(g["items"])), g["blocked"])
     for t in torrents:
         c, p = pops[t["hash"]]
         up = t["_up_week"]
