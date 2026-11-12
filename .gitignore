@@ -18,3 +18,4 @@ crash.*.log
 
 # Ansible
 ansible/.vault_pass
+known_hosts

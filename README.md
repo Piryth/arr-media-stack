@@ -146,7 +146,7 @@ offload-dir "/data/local/media/movies/Title (2000)"   # offload one folder by ha
 journalctl -u homelab-offload -f   # follow the timer's runs
 ```
 
-Settings are the `storage_offload_*` variables in `roles/storage/defaults/main.yml`: categories (`movies`, `tv` by default, `music` optional), thresholds, seeding goals, popularity, dry run, verification mode.
+Settings are the `storage_offload_*` variables in `roles/storage/defaults/main.yml`: categories (`movies`, `tv`, `music`), thresholds, seeding goals, popularity, dry run, verification mode.
 
 ### Manual rclone commands
 
